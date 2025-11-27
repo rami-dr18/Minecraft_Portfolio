@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Minecraftia&display=swap");
 @import "tailwindcss";
 
 html,
@@ -163,46 +163,82 @@ body {
   }
 
   #terminal {
-    @apply w-xl absolute top-32 left-1/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply w-xl absolute top-32 left-1/12 
+         bg-[#8B5A2B]            /* dirt block */
+         shadow-2xl drop-shadow-2xl 
+         rounded-xl overflow-hidden
+         border-4 border-[#5B3A1F]; /* darker dirt edge */
+
+    /* pixelated “block” look */
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 
     h2 {
-      @apply font-bold text-sm text-center w-full;
+      @apply font-bold text-sm text-center w-full
+           text-[#F9FBF6]               /* parchment white */
+           bg-[#556B2F]                 /* grass top */
+           py-2
+           border-b-4 border-[#3B4F23]; /* grass edge */
     }
 
+    /* -------------------------------------------------
+     3. .techstack – inner content
+     ------------------------------------------------- */
     .techstack {
-      @apply text-sm font-roboto p-5;
+      @apply text-sm font-['Minecraftia'] p-5 text-[#F9FBF6];
+
+      /* command line prompt */
+      .font-bold {
+        @apply text-[#00FF00];
+      } /* lime green */
 
       .label {
-        @apply flex items-center ms-10 mt-7;
+        @apply flex items-center ms-10 mt-7 text-[#C0C0C0];
       }
 
+      /* -------------------------------------------------
+       4. .content – list of stacks
+       ------------------------------------------------- */
       .content {
-        @apply py-5 my-5 border-y border-dashed space-y-1;
+        @apply py-5 my-5 border-y-2 border-dashed border-[#5B3A1F] space-y-2;
 
         li {
+          @apply flex items-center gap-3 transition-all duration-150
+               hover:bg-[#6B471F]/30; /* subtle “mine” highlight */
+
           .check {
-            @apply text-[#00A154] w-5;
+            /* pickaxe icon */
+            @apply text-[#00FF00] w-5; /* emerald green */
           }
 
           h3 {
-            @apply font-semibold text-[#00A154] w-32 ms-5;
+            @apply font-semibold text-[#00FF00] w-32 ms-5;
           }
 
           ul {
-            @apply flex items-center gap-3;
+            @apply flex flex-wrap items-center gap-2 text-[#F9FBF6];
           }
         }
       }
 
+      /* -------------------------------------------------
+       5. .footnote – bottom status bar
+       ------------------------------------------------- */
       .footnote {
-        @apply text-[#00A154] space-y-1;
+        @apply text-[#00FF00] space-y-1;
 
         p {
-          @apply flex items-center;
+          @apply flex items-center gap-2;
 
           svg {
-            @apply w-5 me-5;
+            @apply w-5;
           }
+        }
+
+        /* redstone torch */
+        .text-black svg {
+          @apply text-[#ff5555];
         }
       }
     }
