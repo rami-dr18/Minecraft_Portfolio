@@ -8,9 +8,11 @@ import { Pickaxe, FlameKindling } from "lucide-react"; // <-- new icons
 const Terminal = () => {
   return (
     <>
-      <div id="window-header">
-        <WindowControls target="terminal" />
-        <h2 className="ms-2">Tech Stack</h2>
+      <div className="flex items-center">
+        <h2 className=" ps-3 flex items-center gap-2">
+          <WindowControls target="terminal" />
+          Tech Stack
+        </h2>
       </div>
 
       <div className="techstack">

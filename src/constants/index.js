@@ -51,19 +51,19 @@ const dockApps = [
   {
     id: "photos",
     name: "Gallery", // was "Photos"
-    icon: "axe.png",
+    icon: "Painting.png",
     canOpen: true,
   },
   {
     id: "contact",
     name: "Contact", // or "Get in touch"
-    icon: "sword.png",
+    icon: "Filled_Map.png",
     canOpen: true,
   },
   {
     id: "terminal",
     name: "Skills", // was "Terminal"
-    icon: "pickaxe.png",
+    icon: "Crafting_Table.png",
     canOpen: true,
   },
   {
@@ -77,25 +77,30 @@ const dockApps = [
 const blogPosts = [
   {
     id: 1,
-    date: "Sep 2, 2025",
+    date: "Jan 12, 2025",
     title:
-      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-    image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+      "Building Fuel Mate: An AI-Powered Recipe Generator with Gemini 2.5 Flash",
+    // image: "/images/fuelmate.png",
+    image: "https://placehold.co/400",
+    link: "https://yourportfolio.com/blog/fuel-mate-ai-recipe-generator",
   },
   {
     id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-    image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+    date: "Dec 3, 2024",
+    title:
+      "How I Built My Portfolio Website Using React.js, Vite, GSAP, and Framer Motion",
+    // image: "/images/portfolio.png",
+    image: "https://placehold.co/400",
+    link: "https://yourportfolio.com/blog/portfolio-react-gsap",
   },
   {
     id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+    date: "Sep 22, 2025",
+    title:
+      "Developing a Full-Stack E-Commerce Platform with Spring Boot and Angular 19",
+    image: "/images/ecommerce.webp",
+    // image: "https://placehold.co/400",
+    link: "https://yourportfolio.com/blog/springboot-angular19-ecommerce",
   },
 ];
 
@@ -129,28 +134,22 @@ const socials = [
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    link: "https://github.com/rami-dr18",
   },
+
   {
     id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
+    text: "Facebook/meta",
+    icon: "/icons/meta.svg",
+    bg: "#ff866b",
+    link: "https://www.facebook.com/rami.drira.9/",
   },
   {
     id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
-  },
-  {
-    id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    link: "https://www.linkedin.com/in/rami-drira-926261227/",
   },
 ];
 
@@ -245,7 +244,7 @@ const WORK_LOCATION = {
         {
           id: 2,
           name: "nike.com",
-          icon: "/images/safari.png",
+          icon: "/images/book2.webp",
           kind: "file",
           fileType: "url",
           href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
@@ -298,7 +297,7 @@ const WORK_LOCATION = {
         {
           id: 2,
           name: "ai-resume-analyzer.com",
-          icon: "/images/safari.png",
+          icon: "/images/book2.webp",
           kind: "file",
           fileType: "url",
           href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
@@ -351,7 +350,7 @@ const WORK_LOCATION = {
         {
           id: 2,
           name: "food-delivery-app.com",
-          icon: "/images/safari.png",
+          icon: "/images/book2.webp",
           kind: "file",
           fileType: "url",
           href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
